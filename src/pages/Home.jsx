@@ -91,7 +91,7 @@ const VEHICULES = [
   { marque: "Mercedes", modele: "C200 CDI 2.2 16v 122ch", annee: 2006, km: 226800, carburant: "Diesel", prix: 5990, boite: "Manuelle", images: [`${base}images/Mercedes C200 CDI 2.2 16v 122ch.jpg`] },
   { marque: "Renault", modele: "Mégane 1.5 dCi 110ch G-Line", annee: 2012, km: 144900, carburant: "Diesel", prix: 7990, boite: "Manuelle", images: [`${base}images/Renault Mégane 1.5 dCi 110ch G-Line.jpg`] },
   { marque: "Mini", modele: "Cooper SD", annee: 2012, km: 187800, carburant: "Diesel", prix: 9990, boite: "Manuelle", images: [`${base}images/Mini Cooper SD.jpg`] },
-  { marque: "Citroën", modele: "DS3 VTi 120 1.6", annee: 2010, km: 121000, carburant: "Essence", prix: 6990, boite: "Manuelle", images: [`${base}images/Citroën DS3 VTi 120 1.6.jpg`] },
+  { marque: "Citroën", modele: "DS3 VTi 120 1.6", annee: 2010, km: 121000, carburant: "Essence", prix: 6990, boite: "Manuelle", images: [`${base}images/Citroen DS3 VTi 120 1.6.jpg`] },
   { marque: "Volkswagen", modele: "up! 1.0 60ch", annee: 2017, km: 81000, carburant: "Essence", prix: 6490, boite: "Manuelle", images: [`${base}images/Volkswagen up! 1.0 60ch.jpg`] },
   { marque: "Renault", modele: "Twingo 3", annee: 2013, km: 123400, carburant: "Diesel", prix: 6900, boite: "Manuelle", images: [`${base}images/Renault Twingo 3.jpg`] },
   { marque: "Mercedes", modele: "Vito CDI 114", annee: 2017, km: 96000, carburant: "Diesel", prix: 18900, boite: "Manuelle", images: [`${base}images/mercedes vito.jpg`] },
