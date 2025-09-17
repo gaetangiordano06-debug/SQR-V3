@@ -1,0 +1,1 @@
+Projet SQR-V3 — Vite + React + Tailwind. Utilise import.meta.env.BASE_URL pour les images.\n
