@@ -27,6 +27,36 @@ export default function App() {
             </div>
           </div>
 
+{/* Nav mobile (affichée seulement < md) */}
+<nav className="md:hidden bg-white/95 backdrop-blur border-b border-gray-100">
+  <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
+    <NavLink
+      to="/"
+      end
+      className={({ isActive }) =>
+        `flex-1 text-center px-4 py-2 rounded-full transition-all ${
+          isActive ? "bg-blue-600 text-white font-semibold shadow"
+                   : "text-gray-700 bg-gray-50 hover:bg-blue-50"
+        }`
+      }
+    >
+      🚗 Nos véhicules
+    </NavLink>
+    <NavLink
+      to="/contact"
+      className={({ isActive }) =>
+        `flex-1 text-center px-4 py-2 rounded-full transition-all ${
+          isActive ? "bg-blue-600 text-white font-semibold shadow"
+                   : "text-gray-700 bg-gray-50 hover:bg-blue-50"
+        }`
+      }
+    >
+      📞 Contact
+    </NavLink>
+  </div>
+</nav>
+
+
        {/* Milieu : navigation */}
 <nav className="hidden md:flex items-center gap-4 text-sm">
   <NavLink
@@ -56,9 +86,6 @@ export default function App() {
     📞 Contact
   </NavLink>
 </nav>
-
-
-
 
           {/* Droite : adresse + téléphone */}
           <div className="hidden sm:flex flex-col text-right text-xs sm:text-sm text-gray-700">
