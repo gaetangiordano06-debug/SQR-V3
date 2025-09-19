@@ -9,7 +9,7 @@ const formatPrice = (n) =>
 
 /* ================== Inventaire (le tien, inchangé) ================== */
 const VEHICULES = [
-  { marque: "Twingo ", modele: "Twingo 2 1,5L DCI", annee: 2013, km: 123400, carburant: "Essence", prix: 6900, boite: "Manuelle", images:
+  { marque: "Renault ", modele: "Twingo 2 1,5L DCI", annee: 2013, km: 123400, carburant: "Essence", prix: 6900, boite: "Manuelle", images:
     [
       `${base}images/Twingo 2 couverture.jpg`,
       `${base}images/Twingo 2 arriere.jpg`,
