@@ -126,7 +126,17 @@ const VEHICULES = [
     ]
   },
   { marque: "Fiat", modele: "Punto 1.2 ELX", annee: 2000, km: 151500, carburant: "Essence", prix: 3490, boite: "Manuelle", images:
-    [`${base}images/Fiat Punto 1.2 ELX.jpg`]
+    [
+      `${base}images/Fiat Punto 1.2 ELX.jpg`,
+      `${base}images/Fiat Punto 1.2 ELX arriere.jpg`,
+      `${base}images/Fiat Punto 1.2 ELX portierejpg.jpg`
+    ]
+  },
+   { marque: "Volkswagen", modele: "Polo 1,2L TSI", annee: 2012, km: 166000, carburant: "Essence", prix: 8490, boite: "Manuelle", images:
+    [
+      `${base}images/Polo noir avant.jpg`,
+      `${base}images/Polo noir arriere.jpg`
+    ]
   },
 ].map((v, i) => ({ id: `${v.marque}-${v.modele}-${v.annee}-${i}`, ...v }));
 
@@ -273,7 +283,7 @@ export default function Home() {
       </section>
 
       {/* Liste */}
-      <section id="Nos véhicules">
+      <section id="parc">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {results.map((v) => (
             <VehicleCard key={v.id} v={v} base={base} />
