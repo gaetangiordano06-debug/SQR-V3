@@ -97,7 +97,7 @@ const VEHICULES = [
       `${base}images/BMW X1 2.5D intérieur(3).jpg`
     ]
   },
-  { marque: "Toyota ", modele: "Hilux 2,5L D-4D 120 ch", annee: 2010, km: 202000, carburant: "Essence", prix: 18900, boite: "Manuelle", images:
+  { marque: "Toyota", modele: "Hilux 2,5L D-4D 120 ch", annee: 2010, km: 202000, carburant: "Essence", prix: 18900, boite: "Manuelle", images:
     [
       `${base}images/Toyota Hilux 2.5 D-4D 120ch.jpg`,
       `${base}images/Toyota Hilux 2.5 D-4D 120ch (1).jpg`,
