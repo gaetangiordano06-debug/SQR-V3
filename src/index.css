@@ -1,5 +1,8 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* (optionnel) tes styles globaux ici */
 html, body, #root { height: 100%; }
+

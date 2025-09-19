@@ -24,7 +24,7 @@ export default function App() {
             <div>
               <div className="text-lg font-semibold leading-tight">Sur 4 Roues</div>
               <div className="text-xs text-gray-600">
-                ⚙️ Services disponibles : Services de réparation
+                🚘 Vente de véhicules d'occasion
               </div>
             </div>
           </div>
