@@ -8,7 +8,7 @@ export default function Contact() {
 
   const tel = "0624715825";
   const telDisplay = "06 24 71 58 25";
-  const email = "surquatreroues@gmail.com";
+  const email = "contact@surquatreroues.fr";
 
   return (
     <section id="contact" className="border-t border-gray-100 bg-gray-50/50">
