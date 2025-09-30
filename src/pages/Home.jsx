@@ -132,6 +132,16 @@ const VEHICULES = [
       `${base}images/Fiat Punto 1.2 ELX portierejpg.jpg`
     ]
   },
+    { marque: "Chrysler", modele: "PT CRUISER", annee: 2004, km: 186200, carburant: "Essence", prix: 5990, boite: "Manuelle", images:
+    [
+      `${base}images/Polo noir avant.jpg`,
+      `${base}images/Chrysler pt cruiser ext.jpg`,
+      `${base}images/Chrysler pt cruiser ext 2.jpg`,
+      `${base}images/Chrysler pt cruiser int 1.jpg`,
+      `${base}images/Chrysler pt cruiser int 2.jpg`,
+      `${base}images/Chrysler pt cruiser int 3.jpg`
+    ]
+  },
    { marque: "Volkswagen", modele: "Polo 1,2L TSI", annee: 2012, km: 166000, carburant: "Essence", prix: 8490, boite: "Manuelle", images:
     [
       `${base}images/Polo noir avant.jpg`,
