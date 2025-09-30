@@ -134,7 +134,6 @@ const VEHICULES = [
   },
     { marque: "Chrysler", modele: "PT CRUISER", annee: 2004, km: 186200, carburant: "Essence", prix: 5990, boite: "Manuelle", images:
     [
-      `${base}images/Polo noir avant.jpg`,
       `${base}images/Chrysler pt cruiser ext.jpg`,
       `${base}images/Chrysler pt cruiser ext 2.jpg`,
       `${base}images/Chrysler pt cruiser int 1.jpg`,
