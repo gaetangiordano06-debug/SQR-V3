@@ -140,6 +140,77 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
+            {/* ================= FAQ ================= */}
+<section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes</h2>
+
+  <div className="space-y-4">
+    <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="text-base font-semibold text-gray-900">
+          Quels véhicules d’occasion proposez-vous près de Pertuis ?
+        </span>
+        <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
+      </summary>
+      <div className="mt-3 text-gray-700 leading-relaxed">
+        Nous proposons une sélection de citadines, compactes, familiales et utilitaires (Renault, Peugeot, Citroën, Volkswagen, etc.).
+        Chaque véhicule est contrôlé et révisé avant la vente.
+      </div>
+    </details>
+
+    <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="text-base font-semibold text-gray-900">
+          Puis-je essayer un véhicule avant l’achat ?
+        </span>
+        <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
+      </summary>
+      <div className="mt-3 text-gray-700 leading-relaxed">
+        Oui, nous organisons des essais sur rendez-vous. Contactez-nous au{" "}
+        <a href="tel:0624715825" className="font-medium text-blue-600 underline-offset-2 hover:underline">06 24 71 58 25</a>
+        {" "}ou via la page <a href="/contact" className="font-medium text-blue-600 underline-offset-2 hover:underline">Contact</a>.
+      </div>
+    </details>
+
+    <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="text-base font-semibold text-gray-900">
+          Proposez-vous une reprise ou un financement ?
+        </span>
+        <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
+      </summary>
+      <div className="mt-3 text-gray-700 leading-relaxed">
+        Nous étudions les demandes de reprise et pouvons vous orienter vers des solutions de financement adaptées.
+        Parlez-en avec nous lors de votre visite.
+      </div>
+    </details>
+
+    <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="text-base font-semibold text-gray-900">
+          Où vous situez-vous exactement ?
+        </span>
+        <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
+      </summary>
+      <div className="mt-3 text-gray-700 leading-relaxed">
+        Nous sommes au 821 Route de Pertuis, 84240 La Bastide-des-Jourdans, à proximité de Pertuis (84120).
+        Un itinéraire est disponible sur la page <a href="/contact" className="font-medium text-blue-600 underline-offset-2 hover:underline">Contact</a>.
+      </div>
+    </details>
+
+    <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+      <summary className="flex cursor-pointer list-none items-center justify-between">
+        <span className="text-base font-semibold text-gray-900">
+          Les véhicules sont-ils garantis ?
+        </span>
+        <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
+      </summary>
+      <div className="mt-3 text-gray-700 leading-relaxed">
+        Nos véhicules bénéficient d’une garantie de 12 mois
+      </div>
+    </details>
+  </div>
+</section>
     </section>
   );
 }
