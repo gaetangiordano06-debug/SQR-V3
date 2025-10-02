@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route, NavLink, Link, useLocation } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
+import ImgOptimized from "./components/ImgOptimized.jsx";
 
 const base = import.meta.env.BASE_URL || "/";
 const TEL = "0624715825";
@@ -33,11 +34,16 @@ export default function App() {
           <div className="flex items-center justify-between">
             {/* Gauche : logo + titre */}
             <div className="flex items-center gap-3">
-              <img
-                src={`${base}images/logo-sqr.jpg`}
-                alt="SQR"
-                className="w-16 h-16 rounded-full object-contain"
-              />
+              
+<ImgOptimized
+  src={`${base}images/logo-sqr.jpg`}
+  alt="SQR - Sur Quatre Roues"
+  width={64}
+  height={64}
+  priority={true}
+  className="w-16 h-16 rounded-full object-contain"
+/>
+
               <div>
                 <div className="text-lg font-semibold leading-tight">Sur Quatre Roues</div>
                 <div className="text-xs text-gray-600"> 🚘Vente de véhicules d'occasion</div>

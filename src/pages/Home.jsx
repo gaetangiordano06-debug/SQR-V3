@@ -7,7 +7,7 @@ const base = import.meta.env.BASE_URL || "/";
 const formatPrice = (n) =>
   new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }).format(n);
 
-/* ================== Inventaire (le tien, inchangé) ================== */
+/* ================== Inventaire (le tien) ================== */
 const VEHICULES = [
   { marque: "Renault", modele: "Twingo 2 1,5L DCI", annee: 2013, km: 123400, carburant: "Essence", prix: 6900, boite: "Manuelle", images:
     [
@@ -46,7 +46,7 @@ const VEHICULES = [
       `${base}images/Hyundai i10 Clim intérieur.jpg`
     ]
   },
-    { marque: "Ford", modele: "1,6 tdci", annee: 2007, km: 221000, carburant: "Essence",
+  { marque: "Ford", modele: "1,6 tdci", annee: 2007, km: 221000, carburant: "Essence",
     prix: 3990, boite: "Manuelle",
     images:
     [
@@ -142,7 +142,7 @@ const VEHICULES = [
       `${base}images/Fiat Punto 1.2 ELX portierejpg.jpg`
     ]
   },
-    { marque: "Chrysler", modele: "PT CRUISER", annee: 2004, km: 186200, carburant: "Essence", prix: 5990, boite: "Manuelle", images:
+  { marque: "Chrysler", modele: "PT CRUISER", annee: 2004, km: 186200, carburant: "Essence", prix: 5990, boite: "Manuelle", images:
     [
       `${base}images/Chrysler pt cruiser ext.jpg`,
       `${base}images/Chrysler pt cruiser ext 2.jpg`,
@@ -151,7 +151,7 @@ const VEHICULES = [
       `${base}images/Chrysler pt cruiser int 3.jpg`
     ]
   },
-   { marque: "Volkswagen", modele: "Polo 1,2L TSI", annee: 2012, km: 166000, carburant: "Essence", prix: 8490, boite: "Manuelle", images:
+  { marque: "Volkswagen", modele: "Polo 1,2L TSI", annee: 2012, km: 166000, carburant: "Essence", prix: 8490, boite: "Manuelle", images:
     [
       `${base}images/Polo noir avant.jpg`,
       `${base}images/Polo noir arriere.jpg`
@@ -186,14 +186,13 @@ export default function Home() {
     []
   );
 
-  // === Filtrage + Tri (ta logique gardée) ===
+  // === Filtrage + Tri (inchangé) ===
   const results = React.useMemo(() => {
     const q = query.trim().toLowerCase();
 
     let list = VEHICULES.filter(v => {
       const okQuery =
-        !q ||
-        `${v.marque} ${v.modele} ${v.annee}`.toLowerCase().includes(q);
+        !q || `${v.marque} ${v.modele} ${v.annee}`.toLowerCase().includes(q);
 
       const okMarque = marque === "Marque" || v.marque === marque;
       const okCarburant = carburant === "Carburant" || v.carburant === carburant;
@@ -216,8 +215,19 @@ export default function Home() {
 
   return (
     <main className="pb-12">
-      {/* Filtres */}
-      <section className="border-b border-gray-100">
+      {/* ================= H1 SEO ================ */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">
+          Véhicules d'occasion à Pertuis – Sur Quatre Roues
+        </h1>
+        <p className="text-gray-600">
+          Découvrez notre sélection de voitures d’occasion près de Pertuis. Filtrez par marque,
+          motorisation, boîte et prix — et contactez-nous pour un essai !
+        </p>
+      </section>
+
+      {/* ================= Filtres ================ */}
+      <section className="border-b border-gray-100 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Recherche */}
@@ -234,9 +244,7 @@ export default function Home() {
               onChange={(e) => setMarque(e.target.value)}
               className="w-full rounded-full border border-gray-200 px-5 py-3 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             >
-              {marques.map((m) => (
-                <option key={m}>{m}</option>
-              ))}
+              {marques.map((m) => <option key={m}>{m}</option>)}
             </select>
 
             {/* Carburant */}
@@ -245,9 +253,7 @@ export default function Home() {
               onChange={(e) => setCarburant(e.target.value)}
               className="w-full rounded-full border border-gray-200 px-5 py-3 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             >
-              {carburants.map((c) => (
-                <option key={c}>{c}</option>
-              ))}
+              {carburants.map((c) => <option key={c}>{c}</option>)}
             </select>
 
             {/* Boite */}
@@ -256,9 +262,7 @@ export default function Home() {
               onChange={(e) => setBoite(e.target.value)}
               className="w-full rounded-full border border-gray-200 px-5 py-3 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
             >
-              {boites.map((b) => (
-                <option key={b}>{b}</option>
-              ))}
+              {boites.map((b) => <option key={b}>{b}</option>)}
             </select>
           </div>
 
@@ -301,11 +305,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Liste */}
+      {/* ================= Liste ================ */}
       <section id="parc">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {results.map((v) => (
-            <VehicleCard key={v.id} v={v} base={base} />
+          {results.map((v, index) => (
+            <VehicleCard key={v.id} v={v} base={base} index={index} />
           ))}
         </div>
       </section>
