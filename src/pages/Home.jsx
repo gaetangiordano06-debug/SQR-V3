@@ -46,6 +46,16 @@ const VEHICULES = [
       `${base}images/Hyundai i10 Clim intérieur.jpg`
     ]
   },
+    { marque: "Ford", modele: "1,6 tdci", annee: 2007, km: 221000, carburant: "Essence",
+    prix: 3990, boite: "Manuelle",
+    images:
+    [
+      `${base}images/Ford 1,6 TDCI ext.jpg`,
+      `${base}images/Ford 1,6 TDCI ext2.jpg`,
+      `${base}images/Ford 1,6 TDCI int.jpg`,
+      `${base}images/Ford 1,6 TDCI int2.jpg`
+    ]
+  },
   { marque: "Audi", modele: "A4 Cabriolet V6 3.0 S-Line Quattro", annee: 2007, km: 255000, carburant: "Essence", prix: 9390, boite: "Manuelle", images:
     [
       `${base}images/Audi A4 Cabriolet V6 3.0 S-Line Quattro.jpg`,
