@@ -151,6 +151,14 @@ const VEHICULES = [
       `${base}images/Chrysler pt cruiser int 3.jpg`
     ]
   },
+    { marque: "Lancia", modele: "Ypsilon 1,2L", annee: 2012, km: 122500, carburant: "Essence", prix: 5990, boite: "Manuelle", images:
+    [
+      `${base}images/Lancia ext.jpg`,
+      `${base}images/Lancia ext2.jpg`,
+      `${base}images/Lancia int 1.jpg`,
+      `${base}images/Lancia int 2.jpg`,
+    ]
+  },
   { marque: "Volkswagen", modele: "Polo 1,2L TSI", annee: 2012, km: 166000, carburant: "Essence", prix: 8490, boite: "Manuelle", images:
     [
       `${base}images/Polo noir avant.jpg`,
