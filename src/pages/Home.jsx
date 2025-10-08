@@ -9,6 +9,14 @@ const formatPrice = (n) =>
 
 /* ================== Inventaire (le tien) ================== */
 const VEHICULES = [
+   { marque: "Peugeot", modele: "208 ", annee: 2014, km: 90500, carburant: "Essence", prix: 7990, boite: "Manuelle", images:
+    [
+      `${base}images/208 ext.jpg`,
+      `${base}images/208 ext2.jpg`,
+      `${base}images/208 int.jpg`,
+      `${base}images/208 int2.jpg`
+    ]
+  },
   { marque: "Renault", modele: "Twingo 2 1,5L DCI", annee: 2013, km: 123400, carburant: "Essence", prix: 6900, boite: "Manuelle", images:
     [
       `${base}images/Twingo 2 couverture.jpg`,
