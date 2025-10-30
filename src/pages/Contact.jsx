@@ -148,7 +148,7 @@ export default function Contact() {
     <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
       <summary className="flex cursor-pointer list-none items-center justify-between">
         <span className="text-base font-semibold text-gray-900">
-          Quels véhicules d’occasion proposez-vous près de Pertuis ?
+          Quels véhicules d’occasion proposez-vous dans le Lubéron ?
         </span>
         <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
       </summary>
@@ -193,7 +193,7 @@ export default function Contact() {
         <span className="ml-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 text-gray-600 transition group-open:rotate-45">＋</span>
       </summary>
       <div className="mt-3 text-gray-700 leading-relaxed">
-        Nous sommes au 821 Route de Pertuis, 84240 La Bastide-des-Jourdans, à proximité de Pertuis (84120).
+        Nous sommes au 821 Route de Pertuis, 84240 La Bastide-des-Jourdans, dans le Lubéron (84120).
         Un itinéraire est disponible sur la page <a href="/contact" className="font-medium text-blue-600 underline-offset-2 hover:underline">Contact</a>.
       </div>
     </details>

@@ -31,6 +31,38 @@ const VEHICULES = [
       `${base}images/Twingo 3 intérieur.jpg`
     ]
   },
+   { marque: "Ford", modele: "Ranger", annee: 2020, km: 85000, carburant: "Essence", prix: 29760, boite: "Manuelle", images:
+    [
+      `${base}images/ford ranger ext.jpg`,
+      `${base}images/ford ranger ext2.jpg`,
+      `${base}images/ford ranger int.jpg`
+    ]
+  },
+     { marque: "Nissan", modele: "Cabstar", annee: 2006, km: 64800, carburant: "Essence", prix: 17500, boite: "Manuelle", images:
+    [
+      `${base}images/nissan cabstar ext.jpg`,
+      `${base}images/nissan cabstar ext2.jpg`,
+      `${base}images/nissan cabstar int.jpg`
+    ]
+  },
+      { marque: "Renault", modele: "Clio 3", annee: 2014, km: 192800, carburant: "Essence", prix: 3790, boite: "Manuelle", images:
+    [
+     
+      `${base}images/renault clio 3 ext.jpg`,
+      `${base}images/renault clio 3 ext2.jpg`,
+      `${base}images/renault clio 3 int.jpg`,
+      `${base}images/renault clio 3 int2.jpg`
+    ]
+  },
+        { marque: "Nissan", modele: "Juke", annee: 2012, km: 158300, carburant: "Essence", prix: 6990, boite: "Manuelle", images:
+    [
+     
+      `${base}images/nissan juke ext.jpg`,
+      `${base}images/nissan juke ext2.jpg`,
+      `${base}images/nissan juke int.jpg`,
+      `${base}images/nissan juke int2.jpg`
+    ]
+  },
   { marque: "Volkswagen", modele: "up! 1.0 60ch", annee: 2017, km: 81000, carburant: "Essence", prix: 6490, boite: "Manuelle", images:
     [
       `${base}images/Volkswagen up! 1.0 60ch (couverture).jpg`,
@@ -234,10 +266,10 @@ export default function Home() {
       {/* ================= H1 SEO ================ */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">
-          Véhicules d'occasion à Pertuis – Sur Quatre Roues
+          Véhicules d'occasion dans le Lubéron – Sur Quatre Roues
         </h1>
         <p className="text-gray-600">
-          Découvrez notre sélection de voitures d’occasion près de Pertuis. Filtrez par marque,
+          Découvrez notre sélection de voitures d’occasion dans le Lubéron. Filtrez par marque,
           motorisation, boîte et prix — et contactez-nous pour un essai !
         </p>
       </section>
